@@ -98,6 +98,17 @@
         align-items: flex-start;
         padding-left: 10px;
     }
+
+    
+}
+
+@media (max-width: 415px) {
+    /* Reset filter button */
+    form button.reset {
+        position: relative;
+        left: 130px;
+        margin-top: 1rem;
+    }
 }
 
 @media (max-width: 334px ) {
@@ -126,6 +137,12 @@
     .footer-fun-note .fun-note {
         font-size: 2.8vw;
     }
+
+    /* Table with title */
+    .programming-info table td.title {
+        min-width: 150px;
+    }
+
 }
 
 /* Table responzive */
@@ -133,7 +150,40 @@
     .programming-info table th {
         word-break: break-word;
     }
+
+    .programming-info table th {
+        font-size: 3.5vw;
+        padding: 5px;
+    }
+
+    .programming-info table td.title {
+        min-width: 100px;
+    }
+    
 }
+
+@media (max-width: 500px) {
+    .programming-info table td {
+        font-size: 1rem;
+        padding: 5px;
+    }
+
+
+    /* Table in individual-tip.php */
+    .specific-tip table th {
+        padding: 10px;
+        font-size: 1.5rem;
+    }
+
+    .specific-tip table td {
+        font-size: 1.2rem;
+    }
+
+    td textarea {
+        font-size: 1.3rem;
+    }
+}
+
 
 @media (max-width: 600px) {
     table {
@@ -189,10 +239,6 @@
         /* transform: translate(-50%, -50%); */
     }
 
-    form button {
-        margin-left: 1rem;
-    }
-
     /* Search Input */
     form input {
         max-width: 60vw;
@@ -204,8 +250,7 @@
     }
 
     div.keywords select {
-        min-width: 60vw;
-        
+        min-width: 60vw;    
     }
     
 }

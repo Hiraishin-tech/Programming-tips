@@ -76,6 +76,7 @@ searchInput.addEventListener("keydown", (event) => {
     if (event.key == "ArrowDown") {
         selectKeywords.focus();
         // console.log(selectKeywords.options);
+        event.preventDefault(); // It prevents from scrolling the window by pressing ArrowDown
     }
     if (event.key == "Enter") {
         selectKeywords.focus();
@@ -102,5 +103,6 @@ selectKeywords.addEventListener("keydown", (event) => {
     }
     
 });
+
 
 

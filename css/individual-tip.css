@@ -17,7 +17,7 @@ table {
     /* margin: 0 auto; */
 }
 
-table th {
+.specific-tip table th {
     padding: 10px;
     font-size: 2rem;
     border-right: 1px solid white;

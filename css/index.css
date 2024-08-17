@@ -108,6 +108,7 @@ form button {
     cursor: pointer;
     transition: 0.2s;
     background-color: #fff;
+    margin-left: 2rem;
 }
 
 form button:hover {

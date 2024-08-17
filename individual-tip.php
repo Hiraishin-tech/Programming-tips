@@ -30,6 +30,7 @@ if (!isset($_GET["title"])) {
     <link rel="stylesheet" href="css/queries.css">
     <script src="https://kit.fontawesome.com/88b85df50e.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <title>Specific programming tip</title>
 </head>
 <body>
@@ -39,7 +40,7 @@ if (!isset($_GET["title"])) {
     </header>
 
 
-<main>
+<main class="specific-tip">
     <table border="1">
         <tr>
             <th>Post:</th>

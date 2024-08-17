@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/queries.css">
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/88b85df50e.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <title>Seach for programming tips</title>
 </head>
 <body>

@@ -34,6 +34,7 @@ if (array_key_exists("filter", $_POST)) {
     <link rel="stylesheet" href="css/queries.css">
     <script src="https://kit.fontawesome.com/88b85df50e.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <title>Home page - programming language tips</title>
 </head>
 <body>
@@ -52,7 +53,7 @@ if (array_key_exists("filter", $_POST)) {
         </select>
         <button name="filter">filter</button>
         <?php if (array_key_exists("filter", $_POST)) { ?>
-            <form action="" class="reset-filter"><button>Reset filter</button></form>
+            <form action="" class="reset-filter"><button class="reset">Reset filter</button></form>
         <?php } ?>
     </form>
     
@@ -70,7 +71,7 @@ if (array_key_exists("filter", $_POST)) {
         <tr>
             <td class="number-post"><?= $info["id"] ?></td>
             <td class="language"><?= htmlspecialchars($info["language"]) ?></td>
-            <td><?= htmlspecialchars($info["title"]) ?></td>
+            <td class="title"><?= htmlspecialchars($info["title"]) ?></td>
             <td><?= htmlspecialchars($info["description"]) ?></td>
             <td class="more-info"><a href="individual-tip.php?title=<?= urlencode($info["title"]) ?>"><i class="fa-solid fa-circle-info"></i></a></td>
         </tr>

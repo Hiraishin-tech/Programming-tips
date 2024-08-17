@@ -1,9 +1,9 @@
 <?php
 
 $db = new PDO(
-    "mysql:host=".getenv("DB_HOST").";dbname=".getenv("DB_NAME").";charset=utf8",
-    getenv("DB_USER"),
-    getenv("DB_PASSWORD"),
+    "mysql:host=localhost;dbname=programming_tips;charset=utf8",
+    "root",
+    "Harry123.",
     array(
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
     ),

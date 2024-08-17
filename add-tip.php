@@ -50,6 +50,7 @@ if (array_key_exists("add", $_POST)) {
     <link rel="stylesheet" href="css/queries.css">
     <script src="https://kit.fontawesome.com/88b85df50e.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <title>Add new programming tip</title>
 </head>
 <body>

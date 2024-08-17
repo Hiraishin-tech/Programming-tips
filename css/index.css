@@ -1,0 +1,116 @@
+body {
+    background-color: #63f74f;
+}
+
+main {
+    margin-bottom: 10vh;
+}
+
+/* Table with info main */
+
+table {
+    max-width: 1200px;
+    color: #fff;
+    background-color: #040000;
+    font-size: 1.3rem;
+    border: 10px solid#fff;
+    margin: 0 auto;
+}
+
+table th {
+    padding: 10px;
+    font-size: 2rem;
+    border-right: 1px solid white;
+}
+
+
+table td {
+    padding: 10px;
+    word-break: break-word;
+}
+
+table th.heading-more-info {
+    border-right: 1px solid transparent;
+}
+
+table th {
+    border-bottom: 10px solid white;
+}
+
+
+table td {
+    border-bottom: 2px solid red;
+    border-right: 1px solid red;
+}
+
+td.number-post {
+    text-align: center;
+}
+
+td.more-info {
+    text-align: center;
+    border-right: 1px solid transparent;
+}
+
+td.more-info a {
+    color: #c90901;
+    font-size: 30px;
+}
+
+td.more-info a:hover {
+    color: #fff;
+    transition: 0.5s;
+}
+
+td.language {
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 15px;
+}
+
+
+/* Filter form */
+form {
+    position: relative;
+    top: 10%;
+    left: 3%;
+    margin-bottom: 30px;
+}
+
+form.reset-filter {
+    /* top: 10%;
+    left: 5%; */
+    display: inline;
+}
+
+form.reset-filter button {
+    width: 200px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+form select {
+    min-width: 150px;
+    font-size: 1.2rem;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #040000;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button {
+    max-width: 130px;
+    font-size: 1.5rem;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+    background-color: #fff;
+}
+
+form button:hover {
+    background-color: #040000;
+    color: #fff;
+}

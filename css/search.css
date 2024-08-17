@@ -1,0 +1,78 @@
+body {
+    background: linear-gradient(#000, #00000069), url("../img/background.jpg");
+    background-size: cover;
+}
+
+main {
+    display: flex;
+    height: 55vh;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: 20vh;
+    padding-bottom: 15vh;
+    /* background-color: #63f74f; */
+}
+
+form input {
+    width: 40vw;
+    height: 50px;
+    padding-left: 5px;
+    /* border-radius: 5px 5px 0 0; */
+    border-radius: 5px;
+    font-size: 2rem;
+}
+
+div.inputs {
+    position: relative;
+}
+
+div.inputs i {
+    font-size: 1.5rem;
+}
+
+button {
+    position: absolute;
+    width: 3rem;
+    border-radius: 5px;
+    cursor: pointer;
+    top: 0;
+    bottom: 0;
+    /* right: 0; */
+    background-color: #fff;
+    transition: all 0.3s;
+}
+
+button:hover {
+    color: #fff;
+    background-color: #040000;
+}
+
+/* Keywords */
+/* div.keywords {
+    display: flex;
+} */
+
+div.keywords select {
+    width: 40vw;
+    overflow-y: hidden;
+    height: auto;
+    outline: none;
+    border: 1px solid transparent;
+    background-color: transparent;
+}
+
+select option {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-bottom: 1px solid grey;
+    border-right: 1px solid grey;
+    border-left: 1px solid grey;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+}
+
+select option:hover {
+    background-color:rgb(25, 103, 210);
+    color: #fff;
+}

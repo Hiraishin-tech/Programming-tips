@@ -1,0 +1,46 @@
+footer {
+    height: 220px;
+    background: linear-gradient( #63f74f,#040000);
+    font-size: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+footer .social-networks {
+    font-size: 2.5rem;
+    padding-top: 18px;
+}
+
+footer .social-networks i {
+    margin-right: 15px;
+}
+
+footer .social-networks a {
+    text-decoration: none;
+    color: white;
+}
+
+.social-networks .fa-facebook:hover {
+    color: #0818ff;
+    transition: 0.5s;
+}
+.social-networks .fa-square-instagram:hover {
+    color: rgb(250, 124, 145);
+    transition: 0.5s;
+}
+.social-networks .fa-youtube:hover {
+    color: red;
+    transition: 0.5s;
+}
+
+.footer-copy-strike .copy-strike {
+    color: #fff;
+}
+
+.footer-fun-note .fun-note {
+    font-family: "Bungee Tint", sans-serif;
+    color: red;
+    font-size: 32px;
+}

@@ -1,0 +1,139 @@
+body {
+    background-color: #63f74f;
+}
+
+
+/* Title */
+div.title-add {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+[name='title'] {
+    display: flex;
+    font-size: 2rem;
+    max-width: 700px;
+    padding: 5px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    background-color: #040000;
+    color: white;
+    padding-left: 15px;
+}
+
+[for='title'] {
+    font-size: 2rem;
+    position: relative;
+    right: 170px;
+    margin-bottom: 10px;
+}
+
+/* Description */
+
+div.description-add {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+[name='description'] {
+    display: flex;
+    font-size: 2rem;
+    max-width: 700px;
+    padding: 5px;
+    border-radius: 10px;
+    max-height: 300px;
+    margin-bottom: 30px;
+}
+
+[for='description'] {
+    font-size: 2rem;
+    position: relative;
+    right: 265px;
+    margin-bottom: 10px;
+}
+
+/* Code example */
+div.code-example-add {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+[name='codeExample'] {
+    display: flex;
+    font-size: 2rem;
+    max-width: 700px;
+    padding: 5px;
+    border-radius: 10px;
+    max-height: 300px;
+    margin-bottom: 50px;
+}
+
+[for='code-example'] {
+    font-size: 2rem;
+    position: relative;
+    right: 245px;
+    margin-bottom: 10px;
+}
+
+/* Choosing programming language */
+div.programming-language-add {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+form select {
+    min-width: 150px;
+    font-size: 1.2rem;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #040000;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 70px;
+}
+
+[for='programming-language'] {
+    font-size: 2rem;
+    position: relative;
+    right: 48px;
+    margin-bottom: 10px;
+}
+
+form button {
+    max-width: 130px;
+    font-size: 1.5rem;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+form button:hover {
+    background-color: #040000;
+    color: #fff;
+}
+
+
+/* Error message */
+h3.error {
+    color: #c90901;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3.error.language {
+    position: absolute;
+    text-align: center;
+    top: 60px;
+}
+
+
+
+

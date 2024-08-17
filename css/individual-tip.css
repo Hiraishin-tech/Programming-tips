@@ -1,0 +1,41 @@
+/* Table with info */
+body {
+    background-color: #63f74f;
+}
+
+main {
+    margin-bottom: 10vh;
+}
+
+table {
+    width: 80%;
+    min-height: 500px;
+    color: #fff;
+    background-color: #040000;
+    font-size: 1.3rem;
+    border: 10px solid#fff;
+    /* margin: 0 auto; */
+}
+
+table th {
+    padding: 10px;
+    font-size: 2rem;
+    border-right: 1px solid white;
+}
+
+
+table td {
+    padding-left: 5px;
+    word-break: break-word;
+    font-size: 1.8rem;
+}
+
+table th {
+    border-right: 2px solid white;
+}
+
+td textarea {
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+}

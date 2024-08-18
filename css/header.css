@@ -44,11 +44,13 @@ nav ul {
     align-items: flex-end;
     column-gap: 30px;
     font-family: "Bungee Tint";
+    margin-right: 10px;
 }
 
 nav ul li {
     list-style: none;
     font-size: 1.5rem;
+    text-shadow: 1px 1px 1px black;
 }
 
 nav ul li a {

@@ -76,3 +76,34 @@ select option:hover {
     background-color:rgb(25, 103, 210);
     color: #fff;
 }
+
+
+/* Animation message */
+div.animation-message {
+    position: absolute;
+    font-family: "Bungee Tint", sans-serif;
+    top: 73%;
+    left: 50%;
+    color: red;
+    /* transform: translate(-50%, -50%); */
+    text-shadow: 2px 2px 2px black;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 20px;
+    animation-name: appear;
+    animation-duration: 2.5s;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes appear {
+    0% {
+        transform: translate(0%, 0%);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+

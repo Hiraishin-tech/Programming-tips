@@ -1,10 +1,17 @@
 /* Header */
 
 @media (max-width: 750px) {
+    main {
+        margin-top: 25vh;
+    }
     header {
         margin-bottom: 10vh;
-        background: linear-gradient(#040000, #63f74f);
-        height: 25vh;
+        background: rgba(0, 0, 0, 0.795);
+        height: 22vh;
+        border-bottom: 1px solid #fff;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
     }
 
     div.nav-icon {
@@ -12,6 +19,7 @@
         justify-content: flex-end;
         column-gap: 20vw;
         padding-top: 3vh;
+
     }
 
     nav {
@@ -45,6 +53,30 @@
 
         text-align: right;
     }
+
+    /* Animation-message */
+    div.animation-message {
+        top: 60%;
+    }
+}
+
+/* Animation-message */
+@media (max-width: 970px) {
+    div.animation-message {
+        top: 75%;
+    }
+}
+
+@media (max-width: 750px) {
+    div.animation-message {
+        top: 65%;
+    }
+}
+
+@media (max-width: 565px) {
+    div.animation-message {
+        font-size: 3.5vw;
+    }
 }
 
 @media (max-width: 712px) {
@@ -67,7 +99,9 @@
         color: #fff;
         text-shadow: 1px 1px 1px;
         padding-top: 2vh;
-        font-size: 10vw;
+        padding-right: 5px;
+        padding-left: 5px;
+        font-size: 8vw;
     }
 
     div.icon {
@@ -92,7 +126,7 @@
         justify-content: flex-end;
         text-align: left;
         column-gap: 30px;
-        row-gap: 0.5rem;
+        row-gap: 1.5rem;
         font-family: "Bungee Tint";
         color: green;
         align-items: flex-start;
@@ -255,8 +289,18 @@
     
 }
 
+/* Search bar */
 @media (max-width: 500px) {
     select#selectKeywords option {
         font-size: 15px;
+    }
+
+    div.inputs {
+        margin-top: 30px;
+    }
+
+    div.inputs input {
+        height: 40px;
+        font-size: 1.5rem;
     }
 }

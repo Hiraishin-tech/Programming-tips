@@ -2,13 +2,24 @@
 require "./assets/db-connect.php";
 require "assets/list-of-programming-languages.php";
 $filterLanguage = null;
+$greeting = null;
 
 $query = $db->prepare("SELECT * FROM tips ORDER BY id DESC");
 $result = $query->execute();
 $result = $query->fetchAll();
-
 // var_dump($result);
 
+// Counting the number of visits on the website
+if (!array_key_exists("visits", $_COOKIE)) {
+    $_COOKIE["visits"] = 1;
+    setcookie("visits", $_COOKIE["visits"], strtotime("+ 1year"));
+} else {
+    $_COOKIE["visits"]++;
+    setcookie("visits", $_COOKIE["visits"], strtotime("+1year"));
+    if ($_COOKIE["visits"] % 10 == 0) {
+        $greeting = "Thank you for coming regularly to my website";
+    }
+}
 
 // Filter the programming languages
 if (array_key_exists("filter", $_POST)) {
@@ -45,6 +56,7 @@ if (array_key_exists("filter", $_POST)) {
 </header>
 
 <main>
+    <?= "<h2 class='greeting'>$greeting</h2>" ?>
     <form action="" method="POST">
         <select name="language" id="">
             <?php foreach ($programmingLanguages as $language): ?>

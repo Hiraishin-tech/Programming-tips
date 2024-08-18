@@ -115,3 +115,11 @@ form button:hover {
     background-color: #040000;
     color: #fff;
 }
+
+
+/* Greeting regular visitors */
+h2.greeting {
+    font-family: "Bungee Tint", sans-serif;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}

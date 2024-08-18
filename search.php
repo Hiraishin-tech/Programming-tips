@@ -39,6 +39,10 @@
 <?php require "assets/footer.php" ?>
 </footer>
 
+<div class="animation-message">
+    <h2>Become a better programmer than yesterday</h2>
+</div>
+
 <script src="js/hamburger-icon.js"></script>
 <script src="js/search.js"></script>
 </body>

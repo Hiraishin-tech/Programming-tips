@@ -78,6 +78,42 @@ select option:hover {
 }
 
 
+/* Default search bar for mobile devices */
+#selectKeywords {
+    display: none;
+}
+
+#keywords-mobile {
+    width: 40vw;
+    height: auto;
+    outline: none;
+    border: 1px solid transparent;
+    background-color: transparent;
+}
+
+#keywords-mobile li {
+    list-style: none;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-bottom: 1px solid grey;
+    border-right: 1px solid grey;
+    border-left: 1px solid grey;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+}
+
+#keywords-mobile li:hover {
+    background-color:rgb(25, 103, 210);
+    color: #fff;
+}
+
+/* Display only the first 4 keywords */
+#keywords-mobile li:nth-child(n+5) {
+    display: none;
+}
+
+
 /* Animation message */
 div.animation-message {
     position: absolute;

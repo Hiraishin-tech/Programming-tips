@@ -3,6 +3,10 @@ const button = document.querySelector("form button");
 const form = document.querySelector("form");
 const selectKeywords = document.querySelector("#selectKeywords");
 
+const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+const ulKeywords = document.querySelector("#keywords-mobile");
+const animationMessage = document.querySelector("div.animation-message");
+
 // Access to database to get title via ajax
 const availableKeywords = [];
 
@@ -20,7 +24,7 @@ document.addEventListener("click", (event) => {
 
             for (const keys of result) {
                 availableKeywords.push(keys.title);
-                // console.log(availableKeywords);      // Here are the results of all keywords title
+                console.log(availableKeywords);      // Here are the results of all keywords title
             }
         }
 
@@ -36,6 +40,7 @@ searchInput.addEventListener("keyup", (event) => {
     let input = searchInput.value;
     
     selectKeywords.innerHTML = "";     // remove duplicate keyword
+    ulKeywords.innerHTML = "";
 
     if (input.length) {
         result = availableKeywords.filter((keyword) => {
@@ -43,8 +48,9 @@ searchInput.addEventListener("keyup", (event) => {
         });
         // console.log(result);
 
-        isSelected = true;
-        for (const keywords of result) {
+        if (!isMobile) {    // For PC and notebook devices
+            isSelected = true;
+            for (const keywords of result) {
             const individualKeywords = document.createElement("option");
             individualKeywords.textContent = keywords;
 
@@ -62,7 +68,30 @@ searchInput.addEventListener("keyup", (event) => {
             selectKeywords.appendChild(individualKeywords);
         }
 
+        } else {     // For mobile and tablet devices
+            for (const keywords of result) {
+                const individualKeywords = document.createElement("li");
+                individualKeywords.textContent = keywords;
+            
+                individualKeywords.addEventListener("click", (event) => {
+                    searchInput.value = keywords;
+                    ulKeywords.innerHTML = "";      // after clicking on the keyword it removes option and only the search bar will appear
+                    form.submit();
+                });
+    
+                ulKeywords.appendChild(individualKeywords);
+            }
+            animationMessage.style.display = "none";
+            
+        }
+
     }
+    if (isMobile) {
+        if (searchInput.value == "") {      // Animation displays when there is no input in search bar on small devices
+            animationMessage.style.display = "block";
+        }
+    }
+    
 });
 
 // Prevents searching for keyword, if the user hadnt input anything
@@ -103,6 +132,7 @@ selectKeywords.addEventListener("keydown", (event) => {
     }
     
 });
+
 
 
 

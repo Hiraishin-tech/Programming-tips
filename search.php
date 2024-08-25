@@ -30,6 +30,9 @@
             <select id="selectKeywords" multiple>
                 
             </select>
+            <ul id="keywords-mobile">
+                
+            </ul>
         </div>
     </form>
 

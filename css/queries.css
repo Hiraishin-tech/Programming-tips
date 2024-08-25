@@ -304,3 +304,25 @@
         font-size: 1.5rem;
     }
 }
+
+/* Search bar for pc and notebook above 768px */
+@media (min-width: 768px) {
+    #selectKeywords {
+        display: block;
+    }
+
+}
+
+@media (max-width: 768px) {
+    div.keywords ul#keywords-mobile {
+        min-width: 60vw;    
+    }
+    main {
+        margin-bottom: 10vh;
+    }
+
+    ul#keywords-mobile li {
+        font-size: 15px;
+    }
+
+}

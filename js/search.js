@@ -24,7 +24,7 @@ document.addEventListener("click", (event) => {
 
             for (const keys of result) {
                 availableKeywords.push(keys.title);
-                console.log(availableKeywords);      // Here are the results of all keywords title
+                // console.log(availableKeywords);      // Here are the results of all keywords title
             }
         }
 

@@ -270,6 +270,7 @@
         position: absolute;
         text-align: center;
         top: 38px;
+        font-size: 16.7px;
         /* transform: translate(-50%, -50%); */
     }
 
@@ -322,7 +323,7 @@
     }
 
     ul#keywords-mobile li {
-        font-size: 15px;
+        font-size: 1.2rem;
     }
 
 }

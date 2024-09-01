@@ -3,7 +3,7 @@ const button = document.querySelector("form button");
 const form = document.querySelector("form");
 const selectKeywords = document.querySelector("#selectKeywords");
 
-const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+const isMobile = /iPhone|iPad|iPod|Android|Tablet/i.test(navigator.userAgent);
 const ulKeywords = document.querySelector("#keywords-mobile");
 const animationMessage = document.querySelector("div.animation-message");
 

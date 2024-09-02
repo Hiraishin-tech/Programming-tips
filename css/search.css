@@ -72,6 +72,10 @@ select option {
     background-color: white;
 }
 
+select option:checked {
+    background-color: rgb(200, 200, 200); 
+}
+
 select option:hover {
     background-color:rgb(25, 103, 210);
     color: #fff;
